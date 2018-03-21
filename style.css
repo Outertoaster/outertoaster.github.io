@@ -9,20 +9,20 @@ font-size: 16px;
 .nav {
     list-style-type: none;
     margin: 0;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     background-color: DarkGreen;
     position: fixed;
     height: 20px;
     overflow: hidden;
 	text-align: center;
-	top: 0;
+	/*top: 0;*/
 }
 
 .navbutton {
 	padding: 20px;
 	background-color: green;
-	border-radius: 10px;
+	border-radius: 4px;
 	text-decoration: none;
 	color: #e0e0e0;
 	
@@ -32,7 +32,7 @@ font-size: 16px;
 	padding: 20px;
 	background-color: lime;
 	border: 5px white;
-	border-radius: 10px;
+	border-radius: 4px;
 	text-decoration: none;
 	color: #e0e0e0;
 	
