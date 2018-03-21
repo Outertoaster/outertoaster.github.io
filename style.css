@@ -24,4 +24,20 @@ font-size: 16px;
 	border-radius: 10px;
 	text-decoration: none;
 	color: #e0e0e0;
-	}
+	
+}
+
+#navbutton:hover {
+	padding: 20px;
+	background-color: green;
+	border: 1px lime;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #e0e0e0;
+	
+}
+
+.active {
+	background-color: lime;
+}
+
