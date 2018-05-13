@@ -4,6 +4,7 @@ body {
 	background-image: /*url("BG.png")*/ linear-gradient(lime, black);
 	font-family: arial;
 font-size: 16px;
+color: #e0e0e0;
 }
 
 
@@ -55,7 +56,8 @@ font-size: 16px;
 }
 
 .writingArea {
-	margin-top: 100px;
+	margin-top: 30px;
+	padding: 30px;
 }
 
 
