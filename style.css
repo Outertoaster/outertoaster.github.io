@@ -1,6 +1,6 @@
 body {
   background-color:#ddd;
-  background-image:img/bg-blur.png;
+  background-image:url(img/bg-blur.png);
   font-family:ubuntu;
   padding:0px;
   margin:0px;
@@ -142,7 +142,7 @@ p {
 
 
   /*footer stuff, dont care about cleanness here*/
-footer {color:gray;text-align:center;margin:auto;
+footer {color:#fefefe99;text-align:center;margin:auto;
 padding:10px 5px 30px 5px;z-index:29;}
 
 
