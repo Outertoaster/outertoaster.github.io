@@ -1,2 +1,2 @@
-# outertoaster.github.io
-My bad site, and first attempt at hosting
+# My little crappy github site thing
+ignore all the old stuff
