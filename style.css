@@ -1,6 +1,8 @@
 body {
-  background-color:#ddd;
+  background-color:rgb(36, 58, 42);
   background-image:url(img/bg-blur.png);
+  background-repeat: no-repeat;
+  background-size: auto;
   font-family:ubuntu;
   padding:0px;
   margin:0px;
@@ -115,22 +117,62 @@ p {
 }
 
 /* Socal media links */
-.sm-links {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+.fa {text-decoration:none;color:#333;}
+.socialbar {
+    background-color:;
+    width:auto;
+    height:auto;
+    margin:10px 10px 0px 10px;
+    //padding:0.5em;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius:8px;
+    border:1px solid #aaa;
+    top:10px;
+    position:sticky;
+    z-index:30;
+    transition:200ms;
+    
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    text-align:center;
+    color:black;
+}
+.socialbar-button {
+  background: transparent; //#fbfbfb;
+  //border-radius:8px;
+  border:1px transparent;
+  border-right:1px solid #bbb;
+  border-left:1px solid #bbb;
+  padding:10px;
+  transition:100ms;
+  
+  margin:0px 0px 0px 0px;
+  flex-grow:1;
+  height:20px;
+  width:20px;
+  outline:0px;
+  
+  font-weight:bold;
+  color:#555;
+  display: inline-block;
+  
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  text-align:center;
+  color:inherit;
+}
+.socialbar-button:hover {
+  background-color:#eee;
 }
 
-/* Twitter link*/
-.sm-twitter {
-  background: transparent;
-  color: white;
+.socialbar-button:active {
+  background-color:#bbb;
 }
-
-
-
 
 
   /*footer stuff, dont care about cleanness here*/
