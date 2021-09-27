@@ -113,29 +113,21 @@ p {
   //filter:blur(0px) brightness(1000%);
   transition:500ms; 
 }
-#dock {
-  position:fixed;
-  background-color:rgba(0,0,0,0.6);
-  -webkit-backdrop-filter: blur(20px);
-  -moz-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  display:flex;
-  flex-direction:row;
-  height:64px;
-  width:60%;
-  z-index:200;
-  border-radius:10px;
-  bottom:10px;
-  align-items:center;
-  justify-content:center;
-  padding:5px;
-  transition:100ms;
+
+/* Socal media links */
+.sm-links {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
-#dock img {margin:0px;border:0px;margin:0px;height:64;width:auto;}
-#dock img:hover {margin:0px;border:0px;margin:0px;height:86;width:auto;filter:brightness(120%);}
-#dock img:active {height:48px;filter:brightness(80%);}
 
-
+/* Twitter link*/
+.sm-twitter {
+  background: transparent;
+  color: white;
+}
 
 
 
