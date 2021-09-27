@@ -186,7 +186,7 @@ padding:10px 5px 30px 5px;z-index:29;}
 /* responsive stuff
    i like this very much
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
   body{background-color:;}
   #headerbar {
     margin:0px;
