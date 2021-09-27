@@ -187,7 +187,7 @@ padding:10px 5px 30px 5px;z-index:29;}
    i like this very much
 */
 @media screen and (max-device-width: 600px) {
-  body{background-color:;}
+  body{font-size: larger;}
   #headerbar {
     margin:0px;
     border-radius:0px 0px 8px 8px;
