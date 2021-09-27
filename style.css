@@ -1,8 +1,10 @@
 body {
   background-color:rgb(36, 58, 42);
-  background-image:url(img/bg-blur.png);
+  background-image:url(img/bg.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: fill;
+  backdrop-filter: none;
+  filter:none;
   font-family:ubuntu;
   padding:0px;
   margin:0px;
