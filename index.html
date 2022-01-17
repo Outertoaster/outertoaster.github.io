@@ -7,16 +7,15 @@
   		<head>
 
 	<body>
-	  
 		  <div id="headerbar">
 		  
-		    <input onclick="window.location.href='index.html';" type="button" class="headerbar-button" title="Go to home page" value="Home"/>
+		    <input onclick="window.location.href='#intro';" type="button" class="headerbar-button" title="Go to home page" value="Home"/>
 		  
-		    <input onclick="window.location.href='page2.html';" type="button" class="headerbar-button" title="Go to Art" value="Art"/> <!--
+		    <input onclick="window.location.href='#art';" type="button" class="headerbar-button" title="Go to Art" value="Art"/>
 		  
-		    <input onclick="window.location.href='page3.html';" type="button" class="headerbar-button" title="Go to page 3" value="Page 3"/>
+		    <input onclick="window.location.href='#other';" type="button" class="headerbar-button" title="Go to page 3" value="Other1"/>
 		  
-		    <input onclick="window.location.href='page4.html';" type="button" class="headerbar-button" title="Go to page 4" value="Page 4"/> -->
+		    <input onclick="window.location.href='#other2';" type="button" class="headerbar-button" title="Go to page 4" value="Other2"/>
 		    
 		  </div>
 	  
@@ -29,7 +28,7 @@
 		  </div>-->
 		
 
-		  <div id="content">
+		  <div class="contentBox" id="intro">
 		  
 		  
 		  <h1>Hello,</h1>
@@ -37,29 +36,46 @@
 		  <p>I'm Outer, a pixel artist and GNOME fanboy</p>
 		  
 		  <p style="margin-bottom: 0px;">-- Social media links --</p>
-		<div class="socialbar">
-			<div class="socialbar-button">
-        		<a href="https://twitter.com/outertoaster" class="fa fa-twitter" alt="Twitter"></a>
-			</div>
+		    <div class="socialbar">
+			    <div class="socialbar-button">
+            		<a href="https://twitter.com/outertoaster" class="fa fa-twitter" alt="Twitter"></a>
+			    </div>
 
-			<div class="socialbar-button">
-        		<a href="https://deviantart.com/outertoaster" class="fa fa-deviantart" alt="Deviantart"></a>
-			</div>
-			<div class="socialbar-button">
-        		<a href="https://github.com/Outertoaster" class="fa fa-github" alt="Github"></a>
-			</div>
-			<div class="socialbar-button">
-        		<a href="https://www.youtube.com/channel/UCcaFjhIFkORs0RLB0i8Tm_w" class="fa fa-youtube-play" alt="Youtube"></a>
-			</div>
-			<div class="socialbar-button">
-        		<a href="https://discord.gg/8xWcHDEBy2" class="fab fa-discord" alt="Discord"></a>
-			</div>
+			    <div class="socialbar-button">
+            		<a href="https://deviantart.com/outertoaster" class="fa fa-deviantart" alt="Deviantart"></a>
+			    </div>
+			    <div class="socialbar-button">
+            		<a href="https://github.com/Outertoaster" class="fa fa-github" alt="Github"></a>
+			    </div>
+			    <div class="socialbar-button">
+            		<a href="https://www.youtube.com/channel/UCcaFjhIFkORs0RLB0i8Tm_w" class="fa fa-youtube-play" alt="Youtube"></a>
+			    </div>
+			    <div class="socialbar-button">
+            		<a href="https://discord.gg/8xWcHDEBy2" class="fab fa-discord" alt="Discord"></a>
+			    </div>
+		    </div>
 		</div>
-
+		
+		<div class="contentBox" id="art">
+		  <h1>My Artworks</h1>
+		</div>
+		
+    <div class="contentBox" id="other">
+		  <h1>other</h1>
+		  <p>
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</div>
+		<div class="contentBox" id="other2">
+		  <h1>other 2</h1>
+		  <p>
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</div>
 
 
 		
-		</div>
+		
 	  <footer>
 	    (footer stuff, disclaimers et cetera) <br>
 	    <sub>(more legal disclaimers)</sub><br>
