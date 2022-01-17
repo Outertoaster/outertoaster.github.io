@@ -7,25 +7,26 @@
   		<head>
 
 	<body>
-		  <div id="headerbar">
+		  <nav role="navigation" id="headerbar">
 		  
 		    <input onclick="window.location.href='#intro';" type="button" class="headerbar-button" title="Go to home page" value="Home"/>
 		  
 		    <input onclick="window.location.href='#art';" type="button" class="headerbar-button" title="Go to Art" value="Art"/>
 		  
-		    <input onclick="window.location.href='#other';" type="button" class="headerbar-button" title="Go to page 3" value="Other1"/>
+		    <input onclick="window.location.href='#other1';" type="button" class="headerbar-button" title="Go to page 3" value="Other1"/>
 		  
 		    <input onclick="window.location.href='#other2';" type="button" class="headerbar-button" title="Go to page 4" value="Other2"/>
 		    
-		  </div>
+		    
+		  </nav>
 	  
-	<!-- old header
+	<!-- old header 
 		  <div id="headerbar">
-		    <a href="index.html" class="headerbar-button" title="Go home">Home</a>
-		    <a href="page2.html" class="headerbar-button" title="Go to page 2">Page 2</a>
-		    <a href="page3.html" class="headerbar-button" title="Go to page 3">Page 3</a>
-		    <a href="page4.html" class="headerbar-button" title="Go to page 4">Page 4</a>
-		  </div>-->
+		    <a href="#intro" class="headerbar-button" title="Go home">Home</a>
+		    <a href="#art" class="headerbar-button" title="Go to art">Page 2</a>
+		    <a href="#other1" class="headerbar-button" title="other1">Page 3</a>
+		    <a href="#other2" class="headerbar-button" title="other2">Page 4</a>
+		  </div> -->
 		
 
 		  <div class="contentBox" id="intro">
@@ -36,31 +37,28 @@
 		  <p>I'm Outer, a pixel artist and GNOME fanboy</p>
 		  
 		  <p style="margin-bottom: 0px;">-- Social media links --</p>
+		  
 		    <div class="socialbar">
-			    <div class="socialbar-button">
-            		<a href="https://twitter.com/outertoaster" class="fa fa-twitter" alt="Twitter"></a>
-			    </div>
-
-			    <div class="socialbar-button">
-            		<a href="https://deviantart.com/outertoaster" class="fa fa-deviantart" alt="Deviantart"></a>
-			    </div>
-			    <div class="socialbar-button">
-            		<a href="https://github.com/Outertoaster" class="fa fa-github" alt="Github"></a>
-			    </div>
-			    <div class="socialbar-button">
-            		<a href="https://www.youtube.com/channel/UCcaFjhIFkORs0RLB0i8Tm_w" class="fa fa-youtube-play" alt="Youtube"></a>
-			    </div>
-			    <div class="socialbar-button">
-            		<a href="https://discord.gg/8xWcHDEBy2" class="fab fa-discord" alt="Discord"></a>
-			    </div>
+			    
+			    <a href="https://twitter.com/outertoaster" class="socialbar-button fa fa-twitter" title="Twitter"></a>
+			    
+			    <a href="https://deviantart.com/outertoaster" class="socialbar-button fa fa-deviantart" title="Deviantart"></a>
+			    
+			    <a href="https://github.com/Outertoaster" class="socialbar-button fa fa-github" title="Github"></a>
+			    
+			    <a href="https://www.youtube.com/channel/UCcaFjhIFkORs0RLB0i8Tm_w" class="socialbar-button fa fa-youtube-play" title="Youtube"></a>
+			    
+			    <a href="https://discord.gg/8xWcHDEBy2" class="socialbar-button fa fa-discord" title="Discord"></a>
+			    
 		    </div>
+		    
 		</div>
 		
 		<div class="contentBox" id="art">
 		  <h1>My Artworks</h1>
 		</div>
 		
-    <div class="contentBox" id="other">
+    <div class="contentBox" id="other1">
 		  <h1>other</h1>
 		  <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -75,12 +73,14 @@
 
 
 		
-		
-	  <footer>
-	    (footer stuff, disclaimers et cetera) <br>
-	    <sub>(more legal disclaimers)</sub><br>
-	    <sub><sub>something dodgy</sub</sub>
-	  </footer>
+		<div class="contentBox" style="padding:2%;">
+	    <footer>
+	      (footer stuff, disclaimers et cetera) <br>
+	      <sub>(more legal disclaimers)</sub><br>
+	      <sub><sub>something dodgy</sub</sub>
+	    </footer>
+	  </div>
+	  
 	</body>
 </html>
 
