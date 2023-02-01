@@ -1,17 +1,19 @@
     html {scroll-behavior: smooth;}
     body {
       background-color: #bbb;
-      background-image:url(img/mountains-blur-heavy.png);
+      //background-image:url(img/mountains-blur-heavy.png);
+      background-image:url(img/group-blur.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
       backdrop-filter: none;
       filter:none;
-      font-family:freesans;
+      font-family:sans;
       padding-left:10%;
       padding-right:10%;
       margin:0px;
       overflow:auto;
+      text-align: center;
     }
     
     @font-face {
@@ -32,19 +34,22 @@
     #logo {
     height:256px;
     width: auto;
+    margin-bottom: 10mm;
+    margin-top: 15mm;
     }
 
     #headerbar {
       background-color:#fafafa;
       width:fill;
       height:auto;
-      max-width: 60em;
-      margin:10% 5% 0% 5%;
+      margin-top:5cm;
+      //max-width: 60em;
+      //margin:10% 5% 0% 5%;
       //padding:0.5em;
       //padding-left:8px;
       //padding-right:8px;
       border-radius:8px;
-      border:1px solid #aaa;
+      border:0px transparent;
       top:10px;
       position:sticky;
       z-index:30;
@@ -57,6 +62,7 @@
       justify-content:center;
       text-decoration:none;
       text-align:center;
+
     }
     
     .headerbar-button {
@@ -66,7 +72,7 @@
       /*border-right:1px solid #bbb;
       border-left:1px solid #bbb;*/
       padding:0.5em 1em 0.5em 1em;
-      transition:100ms;
+      transition:250ms;
       
       margin:0.25em;
       flex-grow:1;
@@ -74,22 +80,25 @@
       outline:0px;
       
       font-weight:bold;
-      color:#555;
+      color: black;//#555;
       display: inline-block;
       
       align-items:center;
       justify-content:center;
       text-decoration:none;
       text-align:center;
+      cursor:pointer;
     }
     
     .headerbar-button:hover {
-      background:#dddddd;
+      background:rgba(0,0,0, 0.1);
     }
     .headerbar-button:active {
-      background:#ddd;
-      //border-color:gray;
-    }
+      background:rgba(0,0,0, 0.3);
+    }/*
+    .headerbar-button:focus {
+      background:rgba(0,0,0, 0.2);
+    }*/
     
     .headerbar-button #activepage {
     
@@ -100,23 +109,40 @@
     padding: 0 10px;
     }
     
-    .contentBox{
-      background-color:white;
-      width:auto;
 
-      max-width: 1000px;
+    .button {
+    background-color: #66b878;
+    border:0px transparent;
+    border-radius: 8px;
+    padding:2mm 20mm 2mm 20mm;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    transition: 250ms;
+    user-select: none;
+    }
+    .button:hover {
+    background-color: #b86766;
+    cursor:pointer;
+    }
+
+
+
+    .contentBox{
+      background-color: #ffffffdd;
+      width:auto;
 
       //height:100%;
       align-items:center;
       justify-content:center;
       padding:5%;
       border-radius:8px 8px 8px 8px;
-      border:1px solid #bbb;
+      border:0px transparent;
       line-height: 2;
     
       //margin:auto;
-      margin-left:8%;
-      margin-right:8%;
+      margin-left:14px;
+      margin-right:14px;
       margin-bottom:20px;
       z-index:5;
       overflow:hidden;
@@ -129,8 +155,11 @@
       flex-grow:1;
     }
     
+    .contentBox, #headerbar {}
+
+    }
     
-    p {
+    p {                     /*  Paragraphs  */
       overflow:auto;
       height:100%;
       text-align:center;
@@ -144,7 +173,7 @@
       width:100%;
       height:auto;
       border-radius:8px;
-      border:1px solid #bbb;
+      border:0px transparent;
       object-fit:contain;
       padding:0px;
       //filter:blur(0px) brightness(1000%);
@@ -165,7 +194,16 @@
     
 
       /*footer stuff, dont care about cleanness here*/
-    footer {text-align:center;margin:auto;}
+    footer {text-align:center;margin:auto;color:#888;}
+
+
+
+
+
+
+
+
+
 
     /* responsive stuff
        i like this very much
@@ -240,7 +278,7 @@
 
 }
 
-
+footer .contentBox {padding:0px;}
 
 @media (prefers-color-scheme: dark) {
   /* Dark theme style*/
