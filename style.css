@@ -1,13 +1,15 @@
     html {scroll-behavior: smooth;}
     body {
       background-color: #bbb;
-      background-image:url(img/bg-blur.png);
+      background-image:url(img/mountains-blur-heavy.png);
+      background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: fill;
+      background-size: cover;
       backdrop-filter: none;
       filter:none;
       font-family:freesans;
-      padding:0px;
+      padding-left:10%;
+      padding-right:10%;
       margin:0px;
       overflow:auto;
     }
@@ -27,10 +29,16 @@
         font-style:italic;
     }
     
+    #logo {
+    height:256px;
+    width: auto;
+    }
+
     #headerbar {
       background-color:#fafafa;
       width:fill;
       height:auto;
+      max-width: 60em;
       margin:10% 5% 0% 5%;
       //padding:0.5em;
       //padding-left:8px;
@@ -86,16 +94,25 @@
     .headerbar-button #activepage {
     
     }
+    .headerbar-button:before{
+    color:black;
+    content: " | ";
+    padding: 0 10px;
+    }
     
     .contentBox{
       background-color:white;
-      width:fill;
+      width:auto;
+
+      max-width: 1000px;
+
       //height:100%;
       align-items:center;
       justify-content:center;
       padding:5%;
       border-radius:8px 8px 8px 8px;
       border:1px solid #bbb;
+      line-height: 2;
     
       //margin:auto;
       margin-left:8%;
@@ -116,7 +133,8 @@
     p {
       overflow:auto;
       height:100%;
-      text-align:justify;
+      text-align:center;
+      width:auto;
     }
     
     .image-container {
@@ -133,64 +151,6 @@
       transition:500ms; 
     }
     
-    /* Socal media links */
-    .fa {text-decoration:none;color:#333;}
-    .socialbar {
-        background-color:;
-        width:auto;
-        height:auto;
-        margin:10px 10px 0px 10px;
-        //padding:0.5em;
-        padding-left:8px;
-        padding-right:8px;
-        border-radius:8px;
-        border:1px solid #aaa;
-        top:10px;
-        position:sticky;
-        z-index:30;
-        transition:200ms;
-        
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:center;
-        text-decoration:none;
-        text-align:center;
-        color:black;
-    }
-    .socialbar-button {
-      background: transparent; //#fbfbfb;
-      //border-radius:8px;
-      border:1px transparent;
-      border-right:1px solid #bbb;
-      border-left:1px solid #bbb;
-      padding:10px;
-      transition:100ms;
-      
-      margin:0px 0px 0px 0px;
-      flex-grow:1;
-      height:20px;
-      width:20px;
-      outline:0px;
-      
-      font-weight:bold;
-      color:#555;
-      display: inline-block;
-      
-      align-items:center;
-      justify-content:center;
-      text-decoration:none;
-      text-align:center;
-      color:inherit;
-    }
-    .socialbar-button:hover {
-      background-color:#eee;
-    }
-    
-    .socialbar-button:active {
-      background-color:#bbb;
-    }
-    
     .contentimg {
       border: 1px solid #00000088;
       margin: 3%;
@@ -203,19 +163,10 @@
       user-select: none;
     }
     
-    
-    
-    
-    
-    
-    
+
       /*footer stuff, dont care about cleanness here*/
     footer {text-align:center;margin:auto;}
-    
-    
-    
-    
-    
+
     /* responsive stuff
        i like this very much
     */
@@ -254,7 +205,10 @@
     
     
 @media screen and (max-width: 600px) {
-      body{font-size: 1em;}
+      body{
+      font-size: 1em;
+      padding:0px;
+      }
       #headerbar {
         margin:0px;
         border-radius:0px 0px 8px 8px;
@@ -268,7 +222,7 @@
         padding:30px;
        }
 }
-     
+     /*
     @media screen and (min-width: 1200px) {
       #headerbar {/*
         margin:0px;
@@ -282,7 +236,7 @@
         padding:5% 10% 5% 10%;
         font-size:1.2em;
        }
-    }
+    }*/
 
 }
 
