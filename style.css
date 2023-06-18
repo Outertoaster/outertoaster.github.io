@@ -1,8 +1,7 @@
     html {scroll-behavior: smooth;}
     body {
       background-color: #bbb;
-      //background-image:url(img/mountains-blur-heavy.png);
-      background-image:url(img/group-blur.png);
+      background-image:url(img/mountains-blur.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -14,6 +13,7 @@
       margin:0px;
       overflow:auto;
       text-align: center;
+      transition: 250ms;
     }
     
     @font-face {
@@ -39,18 +39,13 @@
     }
 
     #headerbar {
-      background-color:#fafafa;
+      background-color: #ffffff;
       width:100%;
       max-width:260mm;
 
       height:auto;
       margin:auto;
-      margin-top:5cm;
-      //max-width: 60em;
-      //margin:10% 5% 0% 5%;
-      //padding:0.5em;
-      //padding-left:8px;
-      //padding-right:8px;
+      margin-top:0cm;
       border-radius:8px;
       border:1px solid rgba(0,0,0, 0.4);
       top:10px;
@@ -114,7 +109,7 @@
     
 
     .button {
-    background-color: #66b878;
+    background-color: #33d17a;
     border:0px transparent;
     border-radius: 8px;
     padding:2mm 20mm 2mm 20mm;
@@ -125,8 +120,11 @@
     user-select: none;
     }
     .button:hover {
-    background-color: #b86766;
+    background-color: #57e389;
     cursor:pointer;
+    }
+    .button:active {
+    background-color: #2ec27e;
     }
 
     .content {
@@ -151,6 +149,7 @@
       margin-left:auto;
       margin-right:auto;
       margin-bottom:20px;
+      margin-top: 10px;
       //left:14px;
       //right:14px;
 
@@ -173,15 +172,11 @@
       width:90%;
       height:90%;
     }
-
-    .pod, #headerbar {}
-
-    }
     
     p {                     /*  Paragraphs  */
       overflow:auto;
       height:100%;
-      text-align:center;
+      text-align:left;
       width:auto;
     }
     
@@ -201,9 +196,9 @@
     
     .contentimg {
       border: 1px solid #00000088;
-      margin: 3%;
+      margin: 0 auto;
       border-radius:12px;
-      max-width: 90%;
+      max-width: 100%;
       height: auto;
       
       -webkit-user-select: none;  /* Chromium based*/
@@ -299,50 +294,40 @@
 
 footer .pod {padding:0px;}
 
+
+
 @media (prefers-color-scheme: dark) {
   /* Dark theme style*/
   body {
+      color:#ccc;
       background-color: #333;
+      background-image:url(img/mountains-blur-dark.png);
+      transition: 250ms;
     }    
     #headerbar {
-      background-color:#gray;
-      box-shadow:0px 10px 5px -7px rgba(150, 150, 150, 0.40);
+      background-color:rgba(40,40,40,1);
+      box-shadow:none;
     }
     
     .headerbar-button {
-      background: transparent; //#fbfbfb;
+      background: transparent;
+      color:#fafafa;
     }
     
     .headerbar-button:hover {
-      background:#fff;
+      background-color:#333;
     }
     .headerbar-button:active {
-      background:#ddd;
+      background-color:#555;
     }
     
+    .content {background-color: transparent;}
+
     .pod{
-      background-color:gray;
+      background-color:rgba(50,50,50,0.9);
     }
-    /* Socal media links */
-    .fa {text-decoration:none;color:#333;}
-    .socialbar {
-        background-color:gray;
-        color:white;
+    .button {
+    background-color: ;
     }
-    .socialbar-button {
-      background: transparent; //#fbfbfb;
-      color:inherit;
-    }
-    .socialbar-button:hover {
-      background-color:#eee;
-    }
-    
-    .socialbar-button:active {
-      background-color:#bbb;
-    }
+
 }
- 
-
-
-
-
