@@ -329,4 +329,12 @@ footer .pod {padding:0px;}
     background-color: ;
     }
 
+    table {
+      background-color: #d5d5d590;
+    }
+
+    td {
+      background-color: #00000090;
+    }
+
 }
