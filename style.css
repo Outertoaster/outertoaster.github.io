@@ -7,28 +7,13 @@
       background-size: cover;
       backdrop-filter: none;
       filter:none;
-      font-family:sans;
+      font-family:  "ubuntu",  sans-serif;
       padding-left:5%;
       padding-right:5%;
       margin:0px;
       overflow:auto;
       text-align: center;
       transition: 250ms;
-    }
-    
-    @font-face {
-        font-family: ubuntu;
-        src: url(/fonts/Ubuntu.ttf);
-    }
-    @font-face {
-        font-family: ubuntu-bold;
-        src: url(/fonts/Ubuntu-Bold.ttf);
-        font-weight:bold;
-    }
-    @font-face {
-        font-family: ubuntu-italic;
-        src: url(/fonts/Ubuntu-Italic.ttf);
-        font-style:italic;
     }
     
     #logo {
@@ -164,6 +149,20 @@
       flex-grow:1;
     }
     
+    table {
+      background-color: #d5d5d590;
+      padding: 1%;
+      border-radius:  14px;
+      width: auto;
+    }
+
+    td {
+      background-color: #99999955;
+      padding: 2%;
+      border-radius: 16px;
+    }
+
+
     dialog {
       border-radius: 14px;
       border:1px solid rgba(0,0,0,0.15);
