@@ -8,8 +8,8 @@
       backdrop-filter: none;
       filter:none;
       font-family:  "ubuntu",  sans-serif;
-      padding-left:5%;
-      padding-right:5%;
+      padding-left:0%;
+      padding-right:0%;
       margin:0px;
       overflow:auto;
       text-align: center;
@@ -26,11 +26,11 @@
     #headerbar {
       background-color: #ffffff;
       width:100%;
-      max-width:260mm;
+      max-width:1200px;
 
       height:auto;
       margin:auto;
-      margin-top:0cm;
+      margin-top:0px;
       border-radius:8px;
       border:1px solid rgba(0,0,0, 0.4);
       top:10px;
@@ -71,6 +71,8 @@
       text-decoration:none;
       text-align:center;
       cursor:pointer;
+
+      overflow: hidden;
     }
     
     .headerbar-button:hover {
@@ -120,7 +122,7 @@
     .pod{
       background-color: #ffffffdd;
       width:auto;
-      max-width: 20cm;
+      max-width: 30cm;
 
       //height:100%;
       align-items:center;
@@ -147,19 +149,20 @@
       display:flex;
       flex-direction:column;
       flex-grow:1;
+
+      font-size: 1.1em;
     }
     
-    table {
+    table, tr, td {
       background-color: #d5d5d590;
-      padding: 1%;
+      padding: 0px;
       border-radius:  14px;
-      width: auto;
+      border: 1px solid black;
+      overflow: hidden;
+      border-collapse: collapse;
     }
-
-    td {
-      background-color: #99999955;
-      padding: 2%;
-      border-radius: 16px;
+    table {
+    width: 100%;
     }
 
 
