@@ -1,6 +1,6 @@
 * {
   transition:250ms;
-  font-family: 'ubuntu mono';
+  font-family: 'monospace';
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   background-color: #fafafa;
   color:black;
   padding-bottom:20px;
+  margin:0px;
 }
 .content {
   max-width: 800px;
