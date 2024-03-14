@@ -3,26 +3,28 @@
   font-family: 'monospace';
 }
 
-body {
+body { 
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   color:black;
   padding-bottom:20px;
   margin:0px;
 }
+
 .content {
-  max-width: 800px;
+  max-width: 1000px;
   margin:auto;
   padding:15px;
 }
 .button-contain {
   display:grid;
-  grid-gap:15px;
+  grid-gap:0px;
   grid-template-columns: 50% 50%;
 }
 .box {
   outline:1px dashed rgba(0,0,0,1);
+  margin:5px;
   padding: 10px;
   border-radius:  12px;
   background-color: #ffffff;
@@ -85,9 +87,10 @@ body {
   transform:scale(2.0);
 }
 
-h1 {
+.main-title {
 margin-left: 10px;
-animation:text-slide 5s ease;
+animation:text-slide 3s ease;
+white-space: nowrap;
 }
 
 .textpod {
@@ -99,6 +102,68 @@ animation:text-slide 5s ease;
   height: auto;
   align-items:center;
   margin-top: 15px;
+}
+
+img {
+  width:100%;
+  border-radius:  12px;
+}
+.img-article {
+  display:block;
+  max-width:400px;
+  margin:auto;
+}
+code {
+background-color: #f0f0f0;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.fancy-button {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  display:block;
+}
+
+.button-shadow {
+  position: absolute;
+  background-color:lightgray;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transform: translateY(2px);
+  will-change: transform;
+  transition: 500ms;
+}
+
+.button-edge {
+  position: absolute;
+  background-color: #26a269;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.button-front  {
+  position: relative;
+  background-color: #33d17a;
+  border-radius: 12px;
+  transform: translateY(-4px);
+  will-change: transform;
+  transition: 500ms;
 }
 
 @keyframes wobble {
@@ -114,12 +179,15 @@ animation:text-slide 5s ease;
 }
 
 @keyframes text-slide {
-    to {
-      margin-left:10px;
-    }
     from {
       margin-left:150%;
+      color:transparent;
     }
+    to {
+      margin-left:10px;
+      color: black;
+    }
+    
   }
 
 
@@ -141,5 +209,15 @@ animation:text-slide 5s ease;
     background-color:#555; 
   }
   
-  
+  @keyframes text-slide {
+    from {
+      margin-left:150%;
+      color:transparent;
+    }
+    to {
+      margin-left:10px;
+      color: white;
+    }
+    
+  }
 }
