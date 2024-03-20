@@ -4,8 +4,8 @@
 }
 
 body { 
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: #f0f0f0;
   color:black;
   padding-bottom:20px;
@@ -15,7 +15,7 @@ body {
 .content {
   max-width: 1000px;
   margin:auto;
-  padding:15px;
+  padding:0px;
 }
 .button-contain {
   display:grid;
@@ -101,6 +101,8 @@ white-space: nowrap;
   text-align: justify;
   height: auto;
   align-items:center;
+  margin-left:5px;
+  margin-right:5px;
   margin-top: 15px;
 }
 
